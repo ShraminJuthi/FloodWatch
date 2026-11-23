@@ -1,0 +1,107 @@
+[
+  {
+    "id": "DEMO-TE9TBV",
+    "area": "School Road",
+    "volunteer": "Volunteer A",
+    "originalText": "Knee deep near the school",
+    "depthInches": 18,
+    "severity": "Critical",
+    "confidence": "Medium",
+    "isClosed": false,
+    "evidence": [
+      "Knee-depth estimate"
+    ],
+    "status": "Active",
+    "createdAt": "2026-11-23T06:28:09.409Z"
+  },
+  {
+    "id": "DEMO-AQM9GF",
+    "area": "School Road",
+    "volunteer": "Volunteer B",
+    "originalText": "Water up to my ankles",
+    "depthInches": 4,
+    "severity": "Low",
+    "confidence": "Medium",
+    "isClosed": false,
+    "evidence": [
+      "Ankle-depth estimate"
+    ],
+    "status": "Active",
+    "createdAt": "2026-11-23T10:28:09.409Z"
+  },
+  {
+    "id": "DEMO-V6GZ76",
+    "area": "Mosque Road",
+    "volunteer": "Volunteer C",
+    "originalText": "About 1.5 feet in front of the mosque",
+    "depthInches": 18,
+    "severity": "Critical",
+    "confidence": "High",
+    "isClosed": false,
+    "evidence": [
+      "Converted feet to inches"
+    ],
+    "status": "Active",
+    "createdAt": "2026-11-23T11:28:09.409Z"
+  },
+  {
+    "id": "DEMO-R5BAMP",
+    "area": "Market Road",
+    "volunteer": "Volunteer D",
+    "originalText": "Rickshaw can still pass but barely",
+    "depthInches": null,
+    "severity": "High",
+    "confidence": "Medium",
+    "isClosed": false,
+    "evidence": [
+      "Difficult passage reported"
+    ],
+    "status": "Active",
+    "createdAt": "2026-11-23T02:28:09.409Z"
+  },
+  {
+    "id": "DEMO-BQT6HU",
+    "area": "Station Road",
+    "volunteer": "Volunteer E",
+    "originalText": "Road closed, too deep",
+    "depthInches": null,
+    "severity": "Critical",
+    "confidence": "High",
+    "isClosed": true,
+    "evidence": [
+      "Explicit closure / no passage"
+    ],
+    "status": "Active",
+    "createdAt": "2026-11-23T09:28:09.409Z"
+  },
+  {
+    "id": "DEMO-8CEWNM",
+    "area": "Market Road",
+    "volunteer": "Volunteer F",
+    "originalText": "Water is around 6 inches",
+    "depthInches": 6,
+    "severity": "Moderate",
+    "confidence": "High",
+    "isClosed": false,
+    "evidence": [
+      "Reported in inches"
+    ],
+    "status": "Active",
+    "createdAt": "2026-11-17T18:28:09.409Z"
+  },
+  {
+    "id": "R-1795444121498-376",
+    "area": "savar",
+    "volunteer": "jui",
+    "originalText": "\"Knee deep near the school\"",
+    "depthInches": 18,
+    "severity": "Critical",
+    "confidence": "Medium",
+    "isClosed": false,
+    "evidence": [
+      "Knee-depth estimate"
+    ],
+    "status": "Active",
+    "createdAt": "2026-11-23T14:28:41.498Z"
+  }
+]

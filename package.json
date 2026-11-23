@@ -1,0 +1,8 @@
+{
+  "name": "floodwatch",
+  "version": "1.0.0",
+  "description": "Flood reporting and real-time road risk dashboard for SE 331 Live Coding Assessment",
+  "main": "server.js",
+  "scripts": {"start": "node server.js", "dev": "node --watch server.js"},
+  "dependencies": {"express": "^4.21.2"}
+}

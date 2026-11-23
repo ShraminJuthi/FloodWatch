@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FloodWatch | Flood Intelligence Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-icon">≈</span><div><b>FloodWatch</b><small>COMMUNITY RESPONSE</small></div></div>
+    <div class="side-label">WORKSPACE</div>
+    <a class="nav active" href="#overview">▦ <span>Overview</span></a>
+    <a class="nav" href="#reports">◷ <span>Incoming reports</span></a>
+    <div class="side-note"><span class="pulse"></span> System operational<small>Monitoring community updates</small></div>
+    <div class="side-footer">SE 331 · LIVE CODING<br>ASSESSMENT</div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><div class="eyebrow">MONSOON RESPONSE / CITY MONITORING</div><h1>Flood situation overview</h1><p class="sub">Understand current road conditions and prioritize volunteer response.</p></div><div class="live"><span class="pulse"></span> LIVE MONITORING</div></header>
+    <section class="stats" id="stats">
+      <article class="stat"><span class="stat-label">AREAS MONITORED</span><strong id="areaCount">—</strong><small>Neighborhood road segments</small></article>
+      <article class="stat"><span class="stat-label">ACTIVE REPORTS</span><strong id="reportCount">—</strong><small>Reports within last 3 hours</small></article>
+      <article class="stat"><span class="stat-label">CRITICAL AREAS</span><strong id="criticalCount" class="red">—</strong><small>Require immediate attention</small></article>
+      <article class="stat"><span class="stat-label">CONFLICTS DETECTED</span><strong id="conflictCount" class="amber">—</strong><small>Reports disagree in same area</small></article>
+    </section>
+    <section class="content-grid" id="overview">
+      <div class="panel areas-panel"><div class="panel-head"><div><div class="eyebrow">PRIORITY QUEUE</div><h2>Area conditions</h2></div><span class="muted" id="updated">Updating…</span></div><div id="areas" class="area-list"></div></div>
+      <div class="panel form-panel"><div class="eyebrow">FIELD UPDATE</div><h2>Submit a report</h2><p class="muted">Write naturally. FloodWatch will interpret the wording and estimate risk.</p>
+        <form id="reportForm">
+          <label>Area / road name<input id="area" placeholder="e.g. School Road" required></label>
+          <label>Volunteer name <span class="optional">OPTIONAL</span><input id="volunteer" placeholder="e.g. Volunteer 12"></label>
+          <label>What is happening?<textarea id="reportText" rows="4" placeholder="e.g. Water is about 1.5 feet deep near the mosque..." required></textarea></label>
+          <button class="primary" type="submit">＋ Analyze & submit report</button>
+          <div id="formMessage" class="form-message"></div>
+        </form>
+        <div class="tip"><b>Quick tip</b><span>Include a road name, water depth, or whether vehicles can pass.</span></div>
+      </div>
+    </section>
+    <section class="panel reports-panel" id="reports"><div class="panel-head"><div><div class="eyebrow">FIELD INTELLIGENCE</div><h2>Latest incoming reports</h2></div><button class="secondary" id="demoBtn">↻ Load demo data</button></div><div class="table-wrap"><table><thead><tr><th>AREA / VOLUNTEER</th><th>ORIGINAL REPORT</th><th>EST. DEPTH</th><th>RISK</th><th>FRESHNESS</th></tr></thead><tbody id="reportRows"><tr><td colspan="5" class="empty">No reports yet. Submit one or load demo data.</td></tr></tbody></table></div></section>
+    <footer>FloodWatch · Decision support for safer community response <span>Depth estimates are approximate, not field measurements.</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body></html>
